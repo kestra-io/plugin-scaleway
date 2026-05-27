@@ -1,10 +1,10 @@
 {
-  "name": "plugin-template",
+  "name": "plugin-scaleway",
   "build": {
     "context": ".",
     "dockerfile": "Dockerfile"
   },
-  "workspaceFolder": "/workspaces/plugin-template",
+  "workspaceFolder": "/workspaces/plugin-scaleway",
   "forwardPorts": [8080],
   "customizations": {
     "vscode": {
