@@ -17,13 +17,13 @@ import org.slf4j.Logger;
 @Getter
 @NoArgsConstructor
 @Schema(
-    title = "Example task for the Scaleway plugin.",
+    title = "Example task for the Scaleway plugin",
     description = "Placeholder task that reverses a given string. Replace with a real Scaleway task."
 )
 @Plugin(
     examples = {
         @io.kestra.core.models.annotations.Example(
-            title = "Reverse a string.",
+            title = "Reverse a string",
             full = true,
             code = """
                 id: scaleway_example
@@ -39,7 +39,7 @@ import org.slf4j.Logger;
 )
 public class Example extends Task implements RunnableTask<Example.Output> {
     @Schema(
-        title = "The string to reverse.",
+        title = "The string to reverse",
         description = "Any Pebble-renderable string expression."
     )
     private Property<String> format;
@@ -60,7 +60,7 @@ public class Example extends Task implements RunnableTask<Example.Output> {
     @Getter
     public static class Output implements io.kestra.core.models.tasks.Output {
         @Schema(
-            title = "The reversed string output.",
+            title = "The reversed string output",
             description = "Contains the reversed value of the input string."
         )
         private final OutputChild child;
@@ -70,7 +70,7 @@ public class Example extends Task implements RunnableTask<Example.Output> {
     @Getter
     public static class OutputChild implements io.kestra.core.models.tasks.Output {
         @Schema(
-            title = "The reversed value.",
+            title = "The reversed value",
             description = "The input string reversed character by character."
         )
         private final String value;
